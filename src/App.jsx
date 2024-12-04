@@ -4,6 +4,9 @@ import React from "react";
 import Hero from "./components/Hero/Hero";
 import Services from "./components/Services/Services";
 import Footer from "./components/Footer/Footer.jsx";
+import Experts from "./components/Experts.jsx";
+import NewsLetter from "./components/NewsLetter.jsx";
+import Plans from "./components/Plans.jsx";
 
 const App = () => {
   return (
@@ -12,6 +15,9 @@ const App = () => {
       <Services />
       {/* <Banner /> */}
 
+      <Experts/>
+      <NewsLetter/>
+      <Plans/>
       <Footer />
     </div>
   );
