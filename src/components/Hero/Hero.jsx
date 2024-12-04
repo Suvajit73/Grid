@@ -2,7 +2,7 @@ import React from "react";
 import BgImage from "../../assets/bg_2.jpg";
 import home from "../../assets/home_hero_img.png";
 import Navbar from "../Navbar/Navbar";
-
+import { ReactTyped } from "react-typed";
 const bgImage = {
   backgroundImage: `url(${BgImage})`,
   // backgroundColor: "#270c03",
@@ -29,17 +29,19 @@ const Hero = () => {
                 <h1
                   data-aos="fade-up"
                   data-aos-once="true"
-                  className="text-5xl sm:text-6xl lg:text-7xl font-bold"
+                  className="text-4xl sm:text-5xl lg:text-6xl font-bold"
                 >
                   We deliver the best{" "}
-                  <span
-                    data-aos="zoom-out"
-                    data-aos-delay="300"
-                    class="bg-clip-text text-transparent bg-gradient-to-b from-primary to-primary/90 font-cursive"
-                  >
-                    property
-                  </span>{" "}
-                  in the city
+                  <h1>
+                    <ReactTyped 
+                      className="p-3"
+                      strings={['property in the city']}
+                      typeSpeed={120}
+                      backSpeed={70}
+                      loop={true}
+                      />
+                  </h1>
+                  
                 </h1>
                 <div data-aos="fade-up" data-aos-delay="400">
                   <button className="bg-gradient-to-r from-primary to-secondary border-2 border-primary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full">
@@ -82,3 +84,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
