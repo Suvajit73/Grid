@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from "../../assets/logo2.png";
 
 const Menu = [
@@ -23,7 +22,7 @@ const Navbar = () => {
     <>
       <div className=" text-white">
         <div className="container py-2  text-white">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center ">
             {/* Logo section */}
             <div data-aos="fade-down" data-aos-once="true">
               <a
